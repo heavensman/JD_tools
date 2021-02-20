@@ -1,0 +1,19 @@
+宠汪汪执行错误：如下
+Traceback (most recent call last):
+  File "jd_joy_steal.py", line 83, in <module>
+    run()
+  File "jd_joy_steal.py", line 77, in run
+    FriendsPins = getFriendsPins(cookies)
+  File "jd_joy_steal.py", line 32, in getFriendsPins
+    lastPage = getTemplate(cookies, "getFriends", ((
+  File "jd_joy_steal.py", line 27, in getTemplate
+    return response.json()
+  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/site-packages/requests/models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/opt/hostedtoolcache/Python/3.7.9/x64/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
